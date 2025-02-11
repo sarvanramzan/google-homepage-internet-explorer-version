@@ -1,0 +1,95 @@
+/* helper style - css box model */
+.border-blue {
+    border: 1px solid blue;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+/* navigation section */
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+i {
+    margin-right: 10px;
+    cursor: pointer;
+    background: none;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+i:hover {
+    background: #edede9;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+/* main section */
+#main {
+    margin-top: 60px;
+}
+
+
+#logo-img {
+    display: block;
+    margin: 0px auto;
+    width: 300px;
+}
+
+#search-input {
+    display: block;
+    margin: 20px auto;
+    width: 550px;
+    padding: 10px 12px;
+    border: 1px solid gray;
+    border-radius: 24px;
+}
+
+#search-input:focus {
+    outline: none;
+}
+
+#search-input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    padding: 8px 10px;
+    background: #edede9;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:focus {
+    outline: 1px solid #000000;
+}
+
+p a {
+    color: #3a86ff;
+    font-weight: bolder;
+}
+
