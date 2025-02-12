@@ -10,7 +10,7 @@ body {
 }
 
 /* navigation section */
-#nav {
+nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -45,10 +45,15 @@ a {
     text-decoration: none;
 }
 
+#nav-btn {
+    background: #3a86ff;
+    color: #ffffff;
+    border-radius: 12px;
+}
 
 
 /* main section */
-#main {
+main {
     margin-top: 60px;
 }
 
@@ -93,3 +98,23 @@ p a {
     font-weight: bolder;
 }
 
+/* footer section */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    background: #edede9;
+}
+
+#links-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#geolocation {
+    padding: 10px;
+    border-bottom: 2px solid #ffffff;
+}
