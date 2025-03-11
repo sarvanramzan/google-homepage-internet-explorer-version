@@ -5,16 +5,17 @@
 
 body {
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
 }
 
-/* navigation section */
-nav {
+/* Header Section */
+#nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
+    margin-bottom: 50px;
 }
 
 ul {
@@ -28,6 +29,15 @@ li {
     margin-right: 10px;
 }
 
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 i {
     margin-right: 10px;
     cursor: pointer;
@@ -37,84 +47,96 @@ i {
 }
 
 i:hover {
-    background: #edede9;
+    background: #ccd5ae;
 }
 
-a {
-    color: #000000;
-    text-decoration: none;
+#toggle-btn {
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+    background: none;
 }
 
 #nav-btn {
-    background: #3a86ff;
+    background: #0077b6;
     color: #ffffff;
     border-radius: 12px;
 }
 
-
-/* main section */
-main {
-    margin-top: 60px;
-}
-
-
+/* Search Section */
 #logo-img {
-    display: block;
-    margin: 0px auto;
     width: 300px;
+    display: block;
+    margin: 0 auto;
 }
 
 #search-input {
+    width: 500px;
     display: block;
     margin: 20px auto;
-    width: 550px;
     padding: 10px 12px;
-    border: 1px solid gray;
+    border: 2px solid #ccd5ae;
     border-radius: 24px;
 }
 
-#search-input:focus {
-    outline: none;
+#search-input:hover {
+    border: 2px solid #0077b6;
+}
+
+#search-input:hover::placeholder {
+    color: #0077b6;
 }
 
 #search-input:focus::placeholder {
     color: transparent;
 }
 
+#search-input:focus {
+    outline: none;
+}
+
+#search-input::placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+}
+
 button {
-    padding: 8px 10px;
-    background: #edede9;
-    border: none;
-    cursor: pointer;
+    padding: 10px 12px;
     font-family: inherit;
+    background: #ccd5ae;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid #000000;
 }
 
 button:focus {
-    outline: 1px solid #000000;
-}
-
-p a {
-    color: #3a86ff;
     font-weight: bolder;
 }
 
-/* footer section */
-footer {
+p a {
+    color: blue;
+}
+
+/* Footer Section */
+#footer {
     position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
+    left: 0;
     text-align: left;
-    background: #edede9;
+    background: #ccd5ae;
+}
+
+#country-location {
+    padding: 10px;
+    border-bottom: 2px solid #ffffff;
 }
 
 #links-wrap {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-}
-
-#geolocation {
-    padding: 10px;
-    border-bottom: 2px solid #ffffff;
 }

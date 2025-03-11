@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
     <head>
         <title>Google Homepage - Internet Explorer Version</title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="#" target="_blank">Gmail</a></li>
-                <li><a href="#" target="_blank">Images</a></li>
-            </ul>
-            <i class="material-icons">apps</i>
-            <button id="nav-btn">Sign In</button>
-        </nav>
-
-        <main>
-            <img id="logo-img" src="./images/google.png" alt="logo of Google Inc">
-            <input id="search-input" type="text" placeholder="Search the web or type a URL">
-            <button>Google Search</button>
-            <button>I"m Feeling Lucky</button>
-            <p>Google offered in: <a href="#" target="_blank">Nederlands</a></p>
-        </main>
-
-        <footer>
-            <div id="geolocation">Suriname</div>
-            <div id="links-wrap">
+        <div id="container">
+            <div id="nav">
                 <ul>
-                    <li><a href="#" target="_blank">About</a></li>
-                    <li><a href="#" target="_blank">Advertising</a></li>
-                    <li><a href="#" target="_blank">Business</a></li>
-                    <li><a href="#" target="_blank">How Search works</a></li>
+                    <li><a href="#" target="_blank">Gmail</a></li>
+                    <li><a href="#" target="_blank">Images</a></li>
                 </ul>
-                <ul>
-                    <li><a href="#" target="_blank">Privacy</a></li>
-                    <li><a href="#" target="_blank">Terms</a></li>
-                    <li><a href="#" target="_blank">Settings</a></li>
-                </ul>
+                <i class="material-icons">apps</i>
+                <i class="material-icons" id="toggle-btn">loops</i>
+                <button id="nav-btn">Sign In</button>
             </div>
-        </footer>
+            <div>
+                <img id="logo-img" src="/images/google.png" alt="logo of Google Inc">
+                <input type="text" placeholder="Search google or type a url" id="search-input">
+                <button>Google Search</button>
+                <button>I"m Feeling Lucky</button>
+                <p>Google Offered in: <a href="#" target="_blank">Nederlands</a></p>
+                <p id="email-el"></p>
+            </div>
+            <div id="footer">
+                <div id="country-location">Suriname</div>
+                <div id="links-wrap">
+                    <ul>
+                        <li><a href="#" target="_blank">About</a></li>
+                        <li><a href="#" target="_blank">Advertising</a></li>
+                        <li><a href="#" target="_blank">Business</a></li>
+                        <li><a href="#" target="_blank">How search works</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" target="_blank">Privacy</a></li>
+                        <li><a href="#" target="_blank">Terms</a></li>
+                        <li><a href="#" target="_blank">Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+        <script src="/index.js"></script>
     </body>
 </html>
